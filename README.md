@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# 🎮 Minha Lista de Jogos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto simples feito com **React** onde os usuários podem listar jogos que estão jogando, que já finalizaram, ou que abandonaram. A lista é salva localmente no navegador usando **localStorage**, então mesmo que o usuário feche o navegador ou recarregue a página, os dados da lista permanecem.
 
-## Available Scripts
+## 🛠️ Funcionalidades
 
-In the project directory, you can run:
+- Adicionar novos jogos à lista
+- Atualizar o status de um jogo (Jogando, Finalizado, Abandonado)
+- Remover jogos da lista
+- Armazenamento de dados no **localStorage** para persistência entre sessões
 
-### `npm start`
+## 🚀 Como rodar o projeto localmente
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Pré-requisitos
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Antes de começar, certifique-se de ter instalado o seguinte:
 
-### `npm test`
+- [Node.js](https://nodejs.org/) (versão 14 ou superior)
+- [npm](https://www.npmjs.com/) ou [Yarn](https://yarnpkg.com/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Passos
 
-### `npm run build`
+1. **Clone o repositório**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone https://github.com/rickzyinho/que-jogos-vc-jogou.git
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Acesse a pasta do projeto**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```
+   cd que-jogos-vc-jogou
+   ```
 
-### `npm run eject`
+3. **Instale as dependências**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   Se estiver usando npm:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   Ou se estiver usando yarn:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```
+   yarn install
+   ```
 
-## Learn More
+4. **Inicie o servidor de desenvolvimento**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   Se estiver usando npm:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```
+   npm start
+   ```
 
-### Code Splitting
+   Ou se estiver usando yarn:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```
+   yarn start
+   ```
 
-### Analyzing the Bundle Size
+5. **Abra o projeto no navegador**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   O projeto estará rodando localmente. Abra o navegador e acesse:
 
-### Making a Progressive Web App
+   ```
+   http://localhost:3000
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🧑‍💻 Tecnologias Utilizadas
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [React](https://react.dev/)
+- [localStorage](https://developer.mozilla.org/pt-BR/docs/Web/API/Window/localStorage) para persistência de dados

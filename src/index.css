@@ -1,13 +1,121 @@
-body {
+/* Reset básico */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body,
+html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Centralizar todo o conteúdo */
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background-color: #4caf50;
+  color: white;
+  width: 100%;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Footer fixo no rodapé */
+footer {
+  background-color: #4caf50;
+  color: white;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Estilo para o conteúdo principal */
+main {
+  flex-grow: 1;
+  margin-top: 100px; /* Espaço para o header */
+  margin-bottom: 60px; /* Espaço para o footer */
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Estilos do formulário */
+form {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+select,
+button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Estilos da lista de jogos */
+.game-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.game-item select {
+  margin-right: 10px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+  #root {
+    padding: 10px;
+  }
+
+  header,
+  footer {
+    padding: 15px 0;
+    font-size: 14px;
+  }
+
+  form {
+    gap: 5px;
+  }
+
+  input,
+  select,
+  button {
+    font-size: 14px;
+    padding: 8px;
+  }
 }
